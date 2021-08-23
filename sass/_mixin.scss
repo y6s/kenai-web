@@ -1,0 +1,13 @@
+@mixin overlayTransform($transform,$-ms-transform, $-moz-transform, $-webkit-transform, $-o-transform){
+    transform: $transform;
+    -ms-transform: $-ms-transform;
+    -moz-transform: $-moz-transform;
+    -webkit-transform: $-webkit-transform;
+    -o-transform: $-o-transform;
+}    
+@mixin overlayTransition($transition,$-webkit-transition, $-moz-transition, $-o-transition){ 
+    transition: $transition;
+    -webkit-transition: $-webkit-transition;
+  	-moz-transition: $-moz-transition;
+    -o-transition: $-o-transition;
+}    

@@ -1,0 +1,131 @@
+.portada__mkt{
+    background-image: url("https://64.media.tumblr.com/b8ceae2916d5cf9b575204e6c84d6871/58fdbce1fead64f7-32/s1280x1920/417d384483b99a525b1c70d0eb735c56eb27a43c.jpg");
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;    
+    width:100%;
+    height: 72vh;  
+    .portada__mkt_wow{
+        font-size: 50px;
+        font-size: $fuenteoscura;
+        color: $colorblanco;
+        h1{
+            font-size: 60px;
+        }
+    }
+}
+.mkt__div{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    align-items: center;
+    .mkt__div_texto{
+        margin-left: 140px;
+        margin-top:40px;
+        width:49%;
+        color: black;
+        p{
+            font-size: 17px;
+        }
+    }
+    .mkt__div_texto_B{
+        width:23%;
+        color: black;
+        margin: 56px auto;
+    }
+}
+.galeria__margin{
+        display: flex;
+        justify-content: space-between;
+    .galeria__mkt{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px; 
+    color:$colornegro;
+    padding-left: 33px;
+    padding-right: 33px;
+    .galeria__mkt_cont{
+        margin-bottom: 10px;
+        cursor:pointer;
+        padding-left: 56px;
+        .mkt__img{
+            height: 460px;
+            width: 360px;          
+            margin-bottom: 30px;
+            
+        }    
+        h3{
+            font-size: 16px;
+            font-weight: $fuenteoscura;
+        &:hover{
+            color:grey;
+        }
+        }
+        p{
+            color:$colornegro;
+        }      
+                  
+        }       
+}
+}
+.black__box{
+    background-color: black;
+    height:400px;
+    display:flex;
+    justify-content: flex-start;
+    img{
+        width:600px;
+        position: absolute;
+    }
+    p{
+        width: 60px;
+        color:white;
+        position: absolute;
+        right:140px;
+        bottom:80px;
+        top:40px;
+    }
+}
+.box__ysl{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin:100px;
+    @media  (max-width:$breakPointMobile){
+        display: block;
+        width: 90%;
+        margin: 30px;
+    }       
+    .box__ysl_negro{  
+      display: flex;
+      color: white;
+      width: 26%;
+      background-color: black;
+      padding:40px;
+      align-items: center;
+      @media  (max-width:$breakPointMobile){
+        display: block;
+        width: 90%;
+    }       
+      h3{
+          line-height: 50px;
+          font-weight: $fuenteoscura;
+          font-size:26px;
+      }
+    }
+    .box__ysl_img{
+        img{
+            width:700px;
+            cursor: pointer;
+            @media  (max-width:$breakPointMobile){
+                width: 90%;
+            }     
+        }
+    }
+}   
+
+    
+ 

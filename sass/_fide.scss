@@ -1,0 +1,177 @@
+.presentacion__fide{
+    background-image: url("https://64.media.tumblr.com/9606670350ea72d5f68cc9782099b8b4/de3fb8f0294408e0-70/s1280x1920/02556b638de2b5e241bc087e5d16bb7bd7d3373a.jpg");
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .presentacion__fide_titulo{
+        color: white;
+        font-weight: $fuenteoscura;
+       h1{
+        font-size: 80px;
+       }
+    }
+}
+.cont__texto{
+    display: flex;
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 140px;
+    padding:15px 30px;
+    margin-bottom: 140px;
+    align-items: center;
+    width:60%;
+    @media (max-width:$breakPointMobile){
+        display: block;
+            width: 99%;
+            font-size: 25px;
+            justify-content: center;
+        }
+    .cont__texto_square{
+        padding: 90px;
+        @media (max-width:$breakPointMobile){
+            padding: 10px;
+        }
+    }
+    .cont__texto_juntos{
+        display: flex;
+     flex-direction: column;
+     background:white;
+     border-top:20px; 
+     align-items: flex-end;
+        .cont__texto_juntosA{
+            margin:20px;  
+            width:70%;  
+            @media (max-width:$breakPointMobile){
+                    width: 99%; 
+                    margin:1px 2px;
+                }
+        }
+    }
+}
+.excelencia__div{
+    background-color: #fafafa;
+    font-weight: 200;
+    font-size: $tamaniomid;
+    display: flex;
+    align-items: center;
+    .excelencia__div__txt{
+        display: flex;
+        align-items: center;
+        margin: 30px;
+        p{
+            line-height: 50px;
+            margin: 50px;
+            padding: 40px;
+            font-weight: $fuenteoscura;
+        }
+    }
+}
+.revista__div{
+    display: flex;
+    align-items: center;
+    width:89%;
+    margin: 85px;
+    @media (max-width:$breakPointMobile){
+        display: block;
+        margin: 10px;
+    }
+    .revista__divImg{
+        width:590px;
+        @media (max-width:$breakPointMobile){
+            width: 90%;
+            
+            
+        }
+    }    
+    p{
+        margin: 70px;
+        font-weight: $fuenteclara;
+        font-size: $tamaniomid;
+        padding-left: 50px;
+        @media (max-width:$breakPointMobile){
+            width: 90%;
+           
+        }
+    }
+    
+}
+.loreal__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img{
+        @media (max-width:$breakPointMobile){
+            width: 90%;
+        }
+    }
+    h1{
+        width:56%;
+        font-size: 50px;
+        line-height: 50px;
+        margin-top: 170px;
+            
+    }
+    .loreal__divParrafo{
+        margin-top: 30px;
+        font-size: $tamaniomid;
+        font-weight: $fuenteclara;
+    }
+    .loreal__divtexto{
+        font-size: 25px;
+        width:80%;
+    }
+    .loreal__divtexto{
+        width:70%;
+    }
+}
+.grid{
+    display: grid;
+    grid-template-columns:repeat(6,1fr) ;
+    grid-template-rows: 100px 200px;
+    grid-gap: 5px;
+    @media (max-width:$breakPointMobile){
+        display: none;
+    }
+    .grid__galeria_item{
+        width: 100%;
+        height: 100%;
+        position: relative;
+            .grid__galeria_ph{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                height: 100%;
+                    object-fit: cover;
+                    object-position: 50% 50%;
+                    cursor: pointer;
+                    transition: .5s ease-in-out;
+                
+                &:hover{
+                    transform: scale(1.5);
+                }    
+            }  }
+        }  
+    .w-8{
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+    .w-7{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+    .w-6{
+        grid-column: span 1;
+        grid-row: span 3;
+    }
+    .w-5{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .w-4{
+        grid-column: span 3;
+    }
+}

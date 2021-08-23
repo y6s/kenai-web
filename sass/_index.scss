@@ -1,0 +1,118 @@
+.container{
+    position: relative;
+    .img-fluid{
+        @media  (max-width:$breakPointMobile){
+            display: none;
+        }    
+    }
+    .container__presentacion{
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+        right:90px;    
+        .container__txt{
+        font-size: $tamaniotitulo;
+        font-weight: $fuenteclara;
+        width:76%;
+        @media  (max-width:$breakPointMobile){
+            display: flex;
+        }       
+        }            
+    }
+}
+
+.cont__dos{
+    width: 100%;
+  max-width: 1200px;
+  padding-bottom: 40px;
+    .cont__dos_txt{
+        background: #fafafa;
+        margin:$margencentro;
+        font-weight: $fuenteclara;
+        line-height: 2;
+        font-size: $tamaniofuente;      
+        h1{
+            font-weight: $fuenteclara;
+        }
+    }
+    .cont__dos_txt2{
+        margin-top: 90px;
+        margin-left:60px;
+        text-align: center;
+        font-weight: $fuenteclara;
+        font-size: $tamaniomid;
+    }
+    .cont__dos_img{
+        width:60%;
+        margin: auto;
+        padding-top: 60px;  
+        @media  (max-width:$breakPointMobile){
+            width: 90%;
+        }     
+    }
+    .cont__dos_tit{
+        margin:$margencentro;
+        font-weight: $fuenteclara;
+        line-height: 2;
+        font-size: $tamaniofuente;
+    }
+    .cont__dos_tit_next{
+        margin:$margencentro;
+        text-align: justify;
+        font-weight: $fuenteclara;
+        font-size: $tamaniomid;       
+        padding: 20px;
+    }
+}    
+.galeria__flex{
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 130px;
+    color: black;
+       .galeria__box{
+           position: relative;
+           margin:4px;
+           box-sizing: border-box;
+           overflow: hidden;
+           .galeria__box_img{
+            display:block;
+            overflow: hidden;
+            img{
+                @include overlayTransform((scale(1)),(scale(1)),(scale(1)),(scale(1)),(scale(1)));
+                transition: all 1s ease;
+            }
+           }
+            &:hover .galeria__box_img img{    
+                cursor: pointer;
+                @include overlayTransform((scale(1.5)),(scale(1.5)),(scale(1.5)),(scale(1.5)),(scale(1.5)));
+            }
+            .overlay{
+                position: absolute;    
+               width: 100%;
+              height: 100%;
+               top: 0;
+               @include overlayTransition(all 1s ease, all 1s ease,all 1s ease,all 1s ease);
+              &:hover{
+                background: rgba(255, 255, 255, 0.5); 
+                }
+                    p{
+                    position: absolute;
+                    font-size: 5em;
+                    font-weight: bold;
+                    bottom:10px;
+                    right:10px;
+                    top: 10px;
+                    left:10px;
+                    top:-100%;  
+                    @include overlayTransition(all 1s ease, all 1s ease,all 1s ease,all 1s ease);
+                    }
+            &:hover p{    
+            top: 37%;
+                }
+              }  
+            }     
+       }     
+         

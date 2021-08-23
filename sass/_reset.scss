@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,200&display=swap');
+* {
+     margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:'Josefin Sans', sans-serif;
+    font-weight: $fuenteclara;
+    color:$colornegro;
+    background-color: white;
+    scroll-padding-top: 70px;
+    
+}

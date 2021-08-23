@@ -1,0 +1,129 @@
+.about__div{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    padding-top: 90px;
+    @media (max-width:$breakPointMobile){
+        display: block;
+        width: 100%;
+            
+    }
+        .about__divtexto{
+            width:33%;
+            font-weight: 200;
+            font-size: 17px;
+            line-height: 37px;
+            margin: 30px;
+            @media (max-width:$breakPointMobile){
+                width: 100%;
+                    
+            }      
+        }
+        .about__divfoto{
+            width:40%;
+            height:50%;
+            @media (max-width:$breakPointMobile){
+                width: 73%;
+                margin-left: 70px;
+                    
+            }  
+        }
+             
+}        
+.tres__cuadrados{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: wrap;
+    height:auto;
+    width:100%;
+    margin-top: 59px;
+    @media (max-width:$breakPointMobile){
+        display: block;
+       
+    }
+    
+    .tres__cuadradostxt{
+        width:20%;
+        background-color: #fafafa;
+        font-weight: 200;
+        font-size: 19px;
+        margin: 40px;
+        box-sizing: border-box;
+        @media (max-width:$breakPointMobile){
+            display: block;
+            width: 80%;
+            font-size: 25px;
+        }
+    }
+}  
+.foto__div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .foto__divFoto{
+        width:25%;
+        margin-top: 40px;
+        @media (max-width:$breakPointMobile){
+            width: 85%;
+        }
+    }
+}
+.div__p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 99px;  
+    .div__p_texto{
+        width:87%;
+       font-size: 47px;
+       font-weight: 200;
+    }
+}
+.expertise{
+    display: flex;
+    width:100%;
+    padding-top: 80px;
+    margin-left:117px;
+    margin-right:117px;
+    @media (max-width:$breakPointMobile){
+        display: block;
+        width: 90%;
+        margin-right: 20px;
+        margin-left: 40px;
+    }
+    .expertise__txt{
+        width:40%;
+        font-size: 16px;
+        @media (max-width:$breakPointMobile){
+            padding-left: 10px;
+            width: 95%;
+        }
+    .expertise__txt_sub{
+        h3{
+            font-size: 15px;
+        }      
+    }    
+    } 
+    .expertise__dos{
+        width:45%;
+        @media (max-width:$breakPointMobile){
+        width: 80%;
+        font-size: 25px;
+    }
+       a{
+           color:black;
+           text-decoration: underline;
+           font-size: 13px;
+       } 
+       
+    }
+}
+.pad{
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+//** display: block; font-size: 30px; margin: 50px;*// expertise

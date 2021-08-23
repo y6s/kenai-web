@@ -1,0 +1,61 @@
+.contact__cont {
+    background-image: url("https://64.media.tumblr.com/23e17163c5f1e91d57c447290024f010/tumblr_persv4yFDp1uokf2mo1_1280.jpg");
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media  (max-width:$breakPointMobile){
+        height: 20em;  
+    }     
+    .contact__cont_ttl {
+        color: white;
+        h1 {
+            font-size: 60px;
+            color: black;
+            @media  (max-width:$breakPointMobile){
+                color: white;
+                padding-top: 100px;
+            }
+        }
+    }
+}
+
+.contact__dos {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    @media  (max-width:$breakPointMobile){
+        
+    }
+    .contact__dos_x {
+        width: 50%;
+        font-size: 40px;
+        margin-left: 60px;
+        @media  (max-width:$breakPointMobile){
+            font-size: 27px;
+            width: 15em;
+            margin: 10px;
+        }
+    }
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .contact__form_tec {
+        border: 20px;
+        box-shadow: #eac4a3;
+        margin: 70px;
+        font-size: 30px;
+        font-weight: 200;
+        line-height: 40px;
+        margin-top: 100px;
+        .buttono {
+            display: inline-block;
+            padding: 10px 1.2em;
+            border: 0.1em solid black;
+        }
+    }
+}

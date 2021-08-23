@@ -1,0 +1,83 @@
+/*NAV*/
+
+.header-nav {
+    z-index:2;
+    position: fixed;
+ 
+    .navbar {
+        height: 92px;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0px 10px 0px 10px;
+        color: black;
+        width: 100vw;
+        box-shadow: 0px 0px 10px #707070;
+        position:absolute;
+        .navbar__logo {
+            font-size: 45px;
+            font-weight: bold;
+        }
+        .menu-btn i {
+            color: black;
+            font-size: 22px;
+            cursor: pointer;
+            display: none;
+        }
+        .navbar__menu {
+            display: flex;
+            list-style: none;
+            z-index: 1;
+        }
+        .navbar__menuItem {
+            margin: 0 28px;
+            .navbar__menuLink {
+                text-decoration: none;
+                font-weight: 200;
+                font-size: 13px;
+                letter-spacing: 3px;
+                color: black;
+                &:hover,
+                &.active {
+                    color: #e1bee7;
+                    transition: all 200ms ease-in;
+                }
+            }
+        }
+        #click {
+            display: none;
+        }
+    }
+    @media (max-width:$breakPointMobile) {
+        #click:checked~.menu-btn i:before {
+            content: "\f00d";
+        }
+        .navbar {
+            .navbar__menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                height: 100vh;
+                width: 100%;
+                display: block;
+                text-align: center;
+                transition: all 0.3s ease;
+                background: white;
+            }
+            #click:checked~ul {
+                left: 0%;
+            }
+            .navbar__menuItem {
+                margin: 40px 0px;
+            }
+            .navbar__menuLink {
+                font-size: 20px;
+                display: block;
+            }
+            .menu-btn i {
+                display: block;
+            }
+        }
+    }
+}

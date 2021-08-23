@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang=es>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header-nav">
+        <nav class="navbar">
+            <div class="navbar__logo">Kenai.</div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="navbar__menu">
+                <li class="navbar__menuItem"><a href="index.html" class="navbar__menuLink">HOME</a></li>
+                <li class="navbar__menuItem"><a href="about.html" class="navbar__menuLink">AGENCIA</a></li>
+                <li class="navbar__menuItem"><a href="fide.html" class="navbar__menuLink">FIDELIZACION</a></li>
+                <li class="navbar__menuItem"><a href="mkt.html" class="navbar__menuLink">MKT & BRANDING</a></li>
+                <li class="navbar__menuItem"><a href="#" class="navbar__menuLink">DIGITAL & SOCIAL MEDIA</a></li>
+                <li class="navbar__menuItem"><a href="contact.html" class="navbar__menuLink">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contact__cont">
+        <div class="contact__cont_ttl">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+    <div class="contact__dos">
+        <p class="contact__dos_x">¿Qué buscas? Te ofrecemos lo mejor en diseño gráfico, imagen corporativa, creatividad, producción audiovisual, vídeos virales para internet, interfaces móviles, blogs, gestores de contenido, animación, tiendas online, publicidad en buscadores
+            y mucho más. ¿No lo crees?…</p>
+    </div>
+    </div>
+    <div class="contact__form">
+        <form class="contact__form_tec" action="contact" method="post">
+            <p>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="user_name">
+            </p>
+            <p>
+                <label for="surname">Apellido:</label>
+                <input type="text" id="surname" name="user_surname">
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="user_email">
+            </p>
+            <p>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="user_mensaje"></textarea>
+            </p>
+            <p>
+                <div> Queres sucribirte al newsletter?</div>
+                <input type="checkbox" name="acepto" value="1" />
+            </p>
+            <p>
+                <label for="areas">A quien dirigir este mensaje?</label>
+                <select name="areas">
+                    <option>Marketing</option>
+                    <option>Comunicacion</option>
+                    <option>Publicidad</option>
+                </select>
+            </p>
+            <button class="buttono" type="submit" value="Enviar comentario">Enviar</button>
+            <input type="reset" value="Borrar comentario" />
+        </form>
+    </div>
+ <section class="footer">
+        <div class="footer__div">
+            <p>Kenai. es una agencia de comunicación independiente. Nos impulsa la búsqueda de la elegancia y la
+                relevancia. Nos gusta hacer el mundo más hermoso, la información más clara y la comunicación más útil.
+                Apoyamos a nuestros clientes en sus proyectos
+                creativos, editoriales y digitales. Nuestra experiencia proviene de tres agencias ahora unidas.</p>      
+        </div>
+        <div class="footer__div_nws">
+            <p>newsletter</p>
+            <button class="boton">Inscribirse</button>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+        wow = new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // change this if you are not using animate.css
+            offset: 0, // default
+            mobile: true, // keep it on mobile
+            live: true // track if element updates
+        })
+        wow.init();
+    </script>
+
+</body>
+
+</html>

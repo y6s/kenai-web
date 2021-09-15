@@ -6,8 +6,7 @@
     padding-top: 90px;
     @media (max-width:$breakPointMobile){
         display: block;
-        width: 100%;
-            
+        width: 100%; 
     }
         .about__divtexto{
             width:33%;
@@ -16,8 +15,10 @@
             line-height: 37px;
             margin: 30px;
             @media (max-width:$breakPointMobile){
-                width: 100%;
-                    
+                width: 96%;
+                margin: 10px; 
+                text-align: center;
+                
             }      
         }
         .about__divfoto{
@@ -127,3 +128,11 @@
     padding-bottom: 30px;
 }
 //** display: block; font-size: 30px; margin: 50px;*// expertise
+.carousel{
+    display: flex;
+    justify-content: center;
+    
+    .img{
+        width: 600px;
+    }
+}

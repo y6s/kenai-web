@@ -7,60 +7,10 @@
 @import "_fide";
 @import "_mkt";
 @import "_contact";
+@import "_footer";
 
 
 
-/*HOME */
-
-.footer{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 62px 150px;
-    background-color: #fafafa;;
-    font-size: 17px;
-    color: black;  
-       .footer__div{
-        width: 50%;
-        color: black;
-        @media (max-width:$breakPointMobile){
-            display: none;
-        } 
-        }
-        
-       .footer__div_nws{
-        font-weight: bold;
-        display: flex;
-        width: 50%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-       }
-    }
-        
-        .boton{
-            border: 1px solid black;
-            width: 130px;
-            height: 50px;
-            background-color: white;
-            border-radius: 10px;
-            
-    }
-        
-            
-      
-    
-     
-    
-        
-
-
-         
-                   
-           
-        
-           
-             
            
                 
             

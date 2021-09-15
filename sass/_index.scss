@@ -80,9 +80,11 @@
            .galeria__box_img{
             display:block;
             overflow: hidden;
+            
             img{
                 @include overlayTransform((scale(1)),(scale(1)),(scale(1)),(scale(1)),(scale(1)));
                 transition: all 1s ease;
+               
             }
            }
             &:hover .galeria__box_img img{    

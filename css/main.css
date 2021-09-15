@@ -91,6 +91,7 @@ body {
   color: black;
   background-color: white;
   scroll-padding-top: 70px;
+  overflow-x: hidden;
 }
 
 .container {
@@ -252,7 +253,9 @@ body {
 }
 @media (max-width: 768px) {
   .about__div .about__divtexto {
-    width: 100%;
+    width: 96%;
+    margin: 10px;
+    text-align: center;
   }
 }
 .about__div .about__divfoto {
@@ -371,6 +374,14 @@ body {
 .pad {
   padding-top: 80px;
   padding-bottom: 30px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+}
+.carousel .img {
+  width: 600px;
 }
 
 .presentacion__fide {
@@ -754,7 +765,7 @@ body {
   border: 20px;
   box-shadow: #eac4a3;
   margin: 70px;
-  font-size: 30px;
+  font-size: 19px;
   font-weight: 200;
   line-height: 40px;
   margin-top: 100px;
@@ -765,7 +776,6 @@ body {
   border: 0.1em solid black;
 }
 
-/*HOME */
 .footer {
   width: 100%;
   display: flex;
